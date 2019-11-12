@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("https://pixabay.com/get/57e8dc4b4b5ba814f6d1867dda6d49214b6ac3e45656724d762a7fd790/food-1898194_1920.jpg");
+    background-image: url("../image/food.jpg");
     background-size: 100% 100%;
 }
 .jumbotron {
@@ -44,3 +44,9 @@ flip card
     
   .card-flip:hover .card-back {
     transform: rotateY(0deg);
+  }
+
+  .container {
+    margin-bottom: 50px;;
+  }
+  

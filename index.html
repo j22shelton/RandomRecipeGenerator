@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/JS/recipe.js"></script>
+    <!-- <script type="text/javascript" src="assets/JS/recipe.js"></script> -->
 </head>
 
-<!-- <header>
-    <div class="page-header">
-        <h1></h1>
-        
-      </div>
-</header> -->
 
 <body>
+      
     <div class="container">
         <div class="jumbotron">
             <h1>Random Recipe Generator</h1>
-            <h2>Click the button to let the computer will decide what's for dinner!</h2>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Dinner Decision</a>
+            <h2>Click the button to let the computer decide what's for dinner!</h2>
+
+            <!-- //button code// -->
+            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Dinner Decision</a> -->
+            <div id="recipeDisplay">
+                    <!-- //recipe choice displays here// -->
+            </div>
+            <button onclick="newRecipe()">Dinner Selection</button>
         </div>
-        </div>
+    </div>
+    
+    
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -167,7 +170,7 @@
                     <div class="card-front text-white bg-success">
                         <div class="card-body">
                             <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
-                            <h3 class="card-title">One Pan Mexican Quinoa</h3>
+                            <h3 class="card-title">One Pan Mexican</h3>
                             <p class="card-text">Classic Mexican ingredients baked in one dish with Quinoa added</p>
                         </div>
                     </div>

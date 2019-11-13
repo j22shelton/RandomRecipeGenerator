@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="assets/JS/recipe.js"></script> -->
 </head>
 
@@ -18,16 +19,28 @@
             <h1>Random Recipe Generator</h1>
             <h2>Click the button to let the computer decide what's for dinner!</h2>
 
-            <!-- //button code// -->
-            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Dinner Decision</a> -->
-            <div id="recipeDisplay">
-                    <!-- //recipe choice displays here// -->
-            </div>
-            <button onclick="newRecipe()">Dinner Selection</button>
+             <!-- Here we have our button for generating random numbers (#random-button) -->
+             <button id="random-button" class="btn btn-primary btn-lg" role="button">Dinner Decision</button>
+            
+
+               <!-- Here we have div called "randomNumber" where our random number will go -->
+             <h1 class="text-center" id="random-recipe"></h1>
+
         </div>
     </div>
-    
-    
+        
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $("#random-button").on("click", function() {
+          var random = Math.floor(Math.random() * 11);
+          $("#random-recipe").text(random);
+        });
+
+    });
+
+</script>   
+
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -35,7 +48,7 @@
                     <div class="card-front text-white bg-dark">
                         <div class="card-body">
                             <i class="fa fa-search fa-5x float-right"></i>
-                            <h3 class="card-title">Thai stir fry</h3>
+                            <h3 class="card-title">1 Thai stir fry</h3>
                             <p class="card-text">Served with Jasmine Rice</p>
                         </div>
                     </div>
@@ -52,7 +65,7 @@
                     <div class="card-front text-white bg-warning">
                         <div class="card-body">
                             <i class="fa fa-search-plus fa-5x float-right"></i>
-                            <h3 class="card-title">Breaded Garlic Chicken</h3>
+                            <h3 class="card-title">2 Breaded Garlic Chicken</h3>
                             <p class="card-text">Served with Pan Seared Brussel Sprouts</p>
                         </div>
                     </div>
@@ -69,7 +82,7 @@
                     <div class="card-front text-white bg-primary">
                         <div class="card-body">
                             <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
-                            <h3 class="card-title">Stuffed Bell Peppers</h3>
+                            <h3 class="card-title">3 Stuffed Bell Peppers</h3>
                             <p class="card-text">Stuffing includes ground beef, rice, and tomato sauce</p>
                         </div>
                     </div>
@@ -85,7 +98,7 @@
                     <div class="card-front text-white bg-success">
                         <div class="card-body">
                             <i class="fa fa-search fa-5x float-right"></i>
-                            <h3 class="card-title">Salmon</h3>
+                            <h3 class="card-title">4 Salmon</h3>
                             <p class="card-text">Served with Red Pepper slices on top</p>
                         </div>
                     </div>
@@ -102,7 +115,7 @@
                     <div class="card-front text-white bg-primary">
                         <div class="card-body">
                             <i class="fa fa-search-plus fa-5x float-right"></i>
-                            <h3 class="card-title">Korean Crack Slaw</h3>
+                            <h3 class="card-title">5 Korean Crack Slaw</h3>
                             <p class="card-text">Includes red cabbage, beef, peppers, and carrots</p>
                         </div>
                     </div>
@@ -119,7 +132,7 @@
                     <div class="card-front text-white bg-dark">
                         <div class="card-body">
                             <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
-                            <h3 class="card-title">Jambalaya</h3>
+                            <h3 class="card-title">6 Jambalaya</h3>
                             <p class="card-text">Includes vegan sausage</p>
                         </div>
                     </div>
@@ -136,7 +149,7 @@
                     <div class="card-front text-white bg-primary">
                         <div class="card-body">
                             <i class="fa fa-search fa-5x float-right"></i>
-                            <h3 class="card-title">Thai Cashew Chicken</h3>
+                            <h3 class="card-title">7 Thai Cashew Chicken</h3>
                             <p class="card-text">Chicken, rice, and veggies with Thai coconut sauce</p>
                         </div>
                     </div>
@@ -153,7 +166,7 @@
                     <div class="card-front text-white bg-dark">
                         <div class="card-body">
                             <i class="fa fa-search-plus fa-5x float-right"></i>
-                            <h3 class="card-title">Red Lentil Curry</h3>
+                            <h3 class="card-title">8 Red Lentil Curry</h3>
                             <p class="card-text">Classic Curry Indian dish</p>
                         </div>
                     </div>
@@ -170,7 +183,7 @@
                     <div class="card-front text-white bg-success">
                         <div class="card-body">
                             <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
-                            <h3 class="card-title">One Pan Mexican</h3>
+                            <h3 class="card-title">9 One Pan Mexican</h3>
                             <p class="card-text">Classic Mexican ingredients baked in one dish with Quinoa added</p>
                         </div>
                     </div>
@@ -187,7 +200,7 @@
                     <div class="card-front text-white bg-dark">
                         <div class="card-body">
                             <i class="fa fa-search fa-5x float-right"></i>
-                            <h3 class="card-title">Stir-Fry</h3>
+                            <h3 class="card-title">10 Stir-Fry</h3>
                             <p class="card-text">Chicken with pre-packaged veggies</p>
                         </div>
                     </div>
@@ -204,7 +217,7 @@
                     <div class="card-front text-white bg-warning">
                         <div class="card-body">
                             <i class="fa fa-search-plus fa-5x float-right"></i>
-                            <h3 class="card-title">Chilli</h3>
+                            <h3 class="card-title">11 Chilli</h3>
                             <p class="card-text">Vegitarian option available</p>
                         </div>
                     </div>
@@ -221,7 +234,7 @@
                     <div class="card-front text-white bg-primary">
                         <div class="card-body">
                             <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
-                            <h3 class="card-title">Fajitas</h3>
+                            <h3 class="card-title">12 Fajitas</h3>
                             <p class="card-text">Served with fresh tomatos and avocado slices</p>
                         </div>
                     </div>

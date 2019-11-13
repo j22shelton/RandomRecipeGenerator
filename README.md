@@ -1,7 +1,7 @@
 # RandomRecipeGenerator
 
-## A useful tool for when you can't decide what to make for dinner.
- Contains 12 of my most used recipes. Created using HTML, CSS, Java Script.
+## A fun and useful tool for when you can't decide what to make for dinner.
+Click the button to let the computer randomly decide what you should cook for dinner! Then flip the recipe card to find the link on the back with the full recipe details. Contains 12 of my most used recipes. Created using HTML, CSS, Bootstrap, JQuery, and JavaScript.
 
   Check it out at: https://j22shelton.github.io/RandomRecipeGenerator/
   
